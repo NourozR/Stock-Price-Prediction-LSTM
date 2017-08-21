@@ -8,7 +8,7 @@ Stock traders mainly use three indicators for prediction: OHLC average (average 
 # Data Pre-processing:
 After converting the dataset into OHLC average, it becomes one column data. This has been converted into two column time series data, 1st column consisting stock price of time t, and second column of time t+1. All values have been normalized between 0 and 1.
 # Model: 
-Two sequential LSTM layers with Sigmoid activation and one dense layer are used to build the RNN model using Keras.
+Two sequential LSTM layers with Sigmoid activation and one dense layer are used to build the RNN model using Keras deep learning library.
 # Version:
 Python 2.7
 Latest versions of all libraries including deep learning library Keras and Tensorflow.
@@ -33,5 +33,5 @@ Since difference among OHLC average, HLC average and closing value is not signif
 
 The training and testing RMSE are: 1.24 and 1.37 respectively which is pretty good to predict future values of stock.
 
-Stock price of last day was 160.4879 and using this model, price of next day is predicted as 160.9240. However, future values for any time period can be predicted using this model.
+Stock price of last day was 160.4879 and using this model and price of next day is predicted as 160.9240. However, future values for any time period can be predicted using this model.
 
