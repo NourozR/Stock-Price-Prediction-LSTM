@@ -16,3 +16,5 @@ Latest versions of all libraries including deep learning library Keras and Tenso
 Test accuracy metric is root mean square error (RMSE).
 # Results:
 The comparison of OHLC, HLC and Closing price:
+![ttt1](https://user-images.githubusercontent.com/24511419/29501710-76018bbe-864c-11e7-9239-afd8bbf19bb8.png)
+
