@@ -7,6 +7,8 @@ The dataset is taken from yahoo finace's website in CSV format. The dataset cons
 Stock traders mainly use three indicators for prediction: OHLC average (average of Open, High, Low and Closing Prices), HLC average (average of High, Low and Closing Prices) and Closing price, In this project, OHLC average has been used.
 # Data Pre-processing:
 After converting the dataset into OHLC average, it becomes one column data. This has been converted into two column time series data, 1st column consisting stock price of time t, and second column of time t+1. All values have been normalized between 0 and 1.
+# Model: 
+Two sequential LSTM layers with Sigmoid activation and one dense layer are used to build the RNN model using Keras.
 # Version:
 Python 2.7
 Latest versions of all libraries including deep learning library Keras and Tensorflow.
@@ -26,4 +28,10 @@ The comparison of OHLC, HLC and Closing price:
 After the training the fitted curve with original stock price:
 
 ![tt2](https://user-images.githubusercontent.com/24511419/29501783-eb7eccd0-864c-11e7-9c26-0db07dea73c0.png)
+
+Since difference among OHLC average, HLC average and closing value is not significat, so only OHLC average is used to build the model and prediction.
+
+The training and testing RMSE are: 1.24 and 1.37 respectively which is pretty good to predict future values of stock.
+
+Stock price of last day was 160.4879 and using this model, price of next day is predicted as 160.9240. However, future values for any time period can be predicted using this model.
 
