@@ -10,8 +10,7 @@ After converting the dataset into OHLC average, it becomes one column data. This
 # Model: 
 Two sequential LSTM layers with Sigmoid activation and one dense layer are used to build the RNN model using Keras deep learning library.
 # Version:
-Python 2.7
-Latest versions of all libraries including deep learning library Keras and Tensorflow.
+Python 2.7 and Latest versions of all libraries including deep learning library Keras and Tensorflow.
 # Training:
 75% data is used for training. Adagrad (adaptive gradient algorithm) optimizer is used for faster convergence.
 After training starts it will look like:
