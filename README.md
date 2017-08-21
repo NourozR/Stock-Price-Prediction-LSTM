@@ -12,9 +12,17 @@ Python 2.7
 Latest versions of all libraries including deep learning library Keras and Tensorflow.
 # Training:
 75% data is used for training. Adagrad (adaptive gradient algorithm) optimizer is used for faster convergence.
+After training starts it will look like:
+
+
 # Test:
 Test accuracy metric is root mean square error (RMSE).
 # Results:
 The comparison of OHLC, HLC and Closing price:
+
 ![ttt1](https://user-images.githubusercontent.com/24511419/29501710-76018bbe-864c-11e7-9239-afd8bbf19bb8.png)
+
+After the training the fitted curve with original stock price:
+
+![tt2](https://user-images.githubusercontent.com/24511419/29501783-eb7eccd0-864c-11e7-9c26-0db07dea73c0.png)
 
