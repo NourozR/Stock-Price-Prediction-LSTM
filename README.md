@@ -32,5 +32,5 @@ Since difference among OHLC average, HLC average and closing value is not signif
 
 The training and testing RMSE are: 1.24 and 1.37 respectively which is pretty good to predict future values of stock.
 
-Stock price of last day of dataset was 158.8745 and using this model and price of next two days are predicted as 160.3230 and 160.9240 - which was 159.2075 and 159.8325 on 14th and 15th August 2017 according to Yahoo Finance. However, future values for any time period can be predicted using this model.
+Stock price of last day of dataset was 158.8745 and using this model and price of next two days are predicted as 160.3230 and 160.9240 - which were 159.2075 and 159.8325 on 14th and 15th August 2017 according to Yahoo Finance. However, future values for any time period can be predicted using this model.
 
