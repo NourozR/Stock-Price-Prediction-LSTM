@@ -14,6 +14,7 @@ Latest versions of all libraries including deep learning library Keras and Tenso
 75% data is used for training. Adagrad (adaptive gradient algorithm) optimizer is used for faster convergence.
 After training starts it will look like:
 
+![tt3](https://user-images.githubusercontent.com/24511419/29501862-787afad2-864d-11e7-8fbc-26afaa992a4d.png)
 
 # Test:
 Test accuracy metric is root mean square error (RMSE).
