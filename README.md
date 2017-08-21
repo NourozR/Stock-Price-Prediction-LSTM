@@ -10,7 +10,7 @@ After converting the dataset into OHLC average, it becomes one column data. This
 # Model: 
 Two sequential LSTM layers with Sigmoid activation and one dense layer are used to build the RNN model using Keras deep learning library.
 # Version:
-Python 2.7 and Latest versions of all libraries including deep learning library Keras and Tensorflow.
+Python 2.7 and latest versions of all libraries including deep learning library Keras and Tensorflow.
 # Training:
 75% data is used for training. Adagrad (adaptive gradient algorithm) optimizer is used for faster convergence.
 After training starts it will look like:
@@ -32,5 +32,5 @@ Since difference among OHLC average, HLC average and closing value is not signif
 
 The training and testing RMSE are: 1.24 and 1.37 respectively which is pretty good to predict future values of stock.
 
-Stock price of last day was 160.4879 and using this model and price of next day is predicted as 160.9240. However, future values for any time period can be predicted using this model.
+Stock price of last day of dataset was 160.4879 and using this model and price of next day is predicted as 160.9240. However, future values for any time period can be predicted using this model.
 
