@@ -53,9 +53,10 @@ step_size = 1
 
 # LSTM MODEL
 model = Sequential()
-model.add(LSTM(32, input_shape=(1, step_size), return_sequences = True, activation = 'sigmoid'))
+model.add(LSTM(32, input_shape=(1, step_size), return_sequences = True))
 model.add(LSTM(16))
 model.add(Dense(1))
+model.add(Activation('linear'))
 
 # MODEL COMPILING AND TRAINING
 model.compile(loss='mean_squared_error', optimizer='adagrad') # Try SGD, adam, adagrad and compare!!!
