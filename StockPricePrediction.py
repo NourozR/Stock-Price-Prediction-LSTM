@@ -14,8 +14,8 @@ import preprocessing
 np.random.seed(7)
 
 # IMPORTING DATASET 
-dataset = pd.read_csv('apple_share_price.csv', usecols=[1,2,3,4])
-dataset = dataset.reindex(index = dataset.index[::-1])
+dataset = pd.read_csv('apple_share_price.csv')
+dataset = dataset.drop(columns = ['Volume'])
 
 # CREATING OWN INDEX FOR FLEXIBILITY
 obs = np.arange(1, len(dataset) + 1, 1)
