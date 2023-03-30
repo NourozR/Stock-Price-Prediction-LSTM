@@ -107,8 +107,8 @@ plt.show()
 last_val = testPredict[-1]
 last_val_scaled = last_val/last_val
 next_val = model.predict(np.reshape(last_val_scaled, (1,1,1)))
-print "Last Day Value:", np.asscalar(last_val)
-print "Next Day Value:", np.asscalar(last_val*next_val)
+print("Last Day Value:", np.ndarray.item(last_val))
+print("Next Day Value:", np.ndarray.item(last_val*next_val))
 # print np.append(last_val, next_val)
 
 
